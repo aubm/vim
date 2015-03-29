@@ -9,6 +9,7 @@ set scrolloff=3
 set ignorecase
 set smartcase
 set incsearch
+set hlsearch
 set visualbell
 set noerrorbells
 set backspace=indent,eol,start
