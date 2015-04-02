@@ -23,12 +23,8 @@ set shiftwidth=4
 set expandtab
 filetype indent on
 set background=dark
-set t_Co=256
-set guifont=Monaco:h13
-set antialias
-
-" Activation de NERDTree au lancement de vim
-" autocmd vimenter * NERDTree
+" set t_Co=256
+" set antialias
 
 " Désactiver les touches directionnelles
 
@@ -41,10 +37,23 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-:map ;; <Esc>
-:imap ;; <Esc>
+:map ,, <Esc>
+:imap ,, <Esc>
 let mapleader = ","
 
 let g:auto_save = 1
 let g:auto_save_silent = 1
+let g:auto_save_in_insert_mode = 0
 
+" vim-go configs
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
