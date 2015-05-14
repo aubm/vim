@@ -75,3 +75,5 @@ au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 let g:airline#extensions#tabline#enable = 1
 let g:airline_powerline_fonts = 1
 
+" Configuration de ctrlp.vim
+
