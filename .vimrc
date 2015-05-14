@@ -57,3 +57,10 @@ au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+
+" vim-ariline configs
+let g:airline#extensions#tabline#enable = 1
+let g:airline_powerline_fonts = 1
+set laststatus=2
+" get rid of the default mode indicator
+set noshowmode
