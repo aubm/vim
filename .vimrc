@@ -74,12 +74,3 @@ au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 " Configuration de vim-airline
 let g:airline#extensions#tabline#enable = 1
 let g:airline_powerline_fonts = 1
-
-" Configuration de syntastic
-set statusline+="%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_ws = 0
