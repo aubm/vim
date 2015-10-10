@@ -97,3 +97,6 @@ au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 " Configuration de vim-airline
 let g:airline#extensions#tabline#enable = 1
 let g:airline_powerline_fonts = 1
+
+" Configuration de vim-gitgutter
+let g:gitgutter_realtime = 0
