@@ -23,6 +23,8 @@ set tabstop=4 " 4 espaces pour une tabulation
 set shiftwidth=4 " utiliser 4 espaces pour l'auto-indentation
 set expandtab " Utiliser 4 espaces à la place d'une tabulation en mode insertion
 set background=dark " Utiliser un fond sombre
+set foldmethod=syntax " Définit la régle pour le pliage et le dépliage du code
+set foldlevelstart=100 " Définit le niveau de pliage initial
 
 syntax enable " Active la coloration syntaxique
 filetype on " Charge les fichiers de type
@@ -76,9 +78,9 @@ inoremap <tab> <c-r>=Smart_TabComplete()<CR>
 """""""""""""""""""""""""""""""""
 
 " Configuration vim-auto-save
-let g:auto_save = 1
-let g:auto_save_silent = 1
-let g:auto_save_in_insert_mode = 0
+" let g:auto_save = 1
+" let g:auto_save_silent = 1
+" let g:auto_save_in_insert_mode = 0
 
 " Configuration de vim-go
 let g:go_highlight_functions = 1
