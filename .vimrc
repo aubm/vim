@@ -77,11 +77,6 @@ inoremap <tab> <c-r>=Smart_TabComplete()<CR>
 """""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""
 
-" Configuration vim-auto-save
-" let g:auto_save = 1
-" let g:auto_save_silent = 1
-" let g:auto_save_in_insert_mode = 0
-
 " Configuration de vim-go
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
