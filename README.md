@@ -49,5 +49,4 @@ Documentation for the bundles I use are listed below :
 - [vim-fugitive](https://github.com/tpope/vim-fugitive) : "may very well be the best Git wrapper of all time"
 - [vim-trailing-whitespace](https://github.com/bronson/vim-trailing-whitespace) : because trailing whitespaces are bad
 - [indentLine](https://github.com/Yggdroot/indentLine) : shows vertical indent lines
-- [vim-gitgutter](https://github.com/airblade/vim-gitgutter) : show a git diff in the gutter
 - [vim-commentary](https://github.com/tpope/vim-commentary) : helps commenting blocs of code
