@@ -27,9 +27,14 @@ set foldmethod=syntax " Définit la régle pour le pliage et le dépliage du cod
 set foldlevelstart=100 " Définit le niveau de pliage initial
 
 syntax enable " Active la coloration syntaxique
+syntax sync minlines=256
 filetype on " Charge les fichiers de type
 filetype plugin on " Charge les fichiers de type des plugins
 filetype indent on " Charge l'indentation par type de fichier
+
+set nocursorcolumn
+set nocursorline
+set norelativenumber
 
 " Configure la touche leader
 let mapleader = ","
