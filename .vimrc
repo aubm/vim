@@ -101,3 +101,6 @@ let g:airline_powerline_fonts = 1
 
 " Configuration de vim-gitgutter
 let g:gitgutter_realtime = 0
+
+" Configuration pour les fichiers yaml
+autocmd BufNewFile,BufRead *.yml set filetype=ansible
