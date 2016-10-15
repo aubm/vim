@@ -93,7 +93,8 @@ au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow
+autocmd BufWritePost,FileWritePost *.go execute 'GoImports' | cwindow
+autocmd BufWritePost,FileWritePost *.go execute 'GoFmt' | cwindow
 
 " Configuration de vim-airline
 let g:airline#extensions#tabline#enable = 1
@@ -104,3 +105,6 @@ let g:gitgutter_realtime = 0
 
 " Configuration pour les fichiers yaml
 autocmd BufNewFile,BufRead *.yml set filetype=ansible
+
+" Disable autocomplete preview window
+set completeopt-=preview
